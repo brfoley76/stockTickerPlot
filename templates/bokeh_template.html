@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Last Month's Stock Prices</title>
+        
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <form id='input' method='post' action='index'>
+          <p>Ticker symbol: <input type='text' name='ticker' placeholder='GOOG' /></p>
+          <p><input type="submit" value="Submit"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.14.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.14.min.js"></script>
+    {{script|safe}}
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="645771a7-07af-4401-97e4-900a8a860735"></div>
+            {{ div|safe }}
+        </div>
+    </body>
+</html>
