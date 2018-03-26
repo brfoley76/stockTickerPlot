@@ -3,8 +3,8 @@ quandl.ApiConfig.api_key = 'oGV1c7rq87zKDJD27zat'
 from bokeh.plotting import figure, output_file, show
 from bokeh.embed import file_html
 from bokeh.resources import CDN
-import simplejson as json
-import pandas as pd
+#import simplejson as json
+#import pandas as pd
 
 app = Flask(__name__)
 
