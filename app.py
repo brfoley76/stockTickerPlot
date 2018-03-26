@@ -15,7 +15,7 @@ app = Flask(__name__)
 def index():
   #return render_template('stock_ticker_app.html')
   me=generateStockPlot()
-  return render_template(me)
+  return render_template(me.html)
   
 
 if __name__ == '__main__':
