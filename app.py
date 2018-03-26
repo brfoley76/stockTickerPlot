@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import quandl
+import jinja2
 quandl.ApiConfig.api_key = 'oGV1c7rq87zKDJD27zat'
 from bokeh.plotting import figure, output_file, show
 from bokeh.embed import file_html
@@ -12,7 +13,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return render_template('stock_ticker_app.html')
+  #return render_template('stock_ticker_app.html')
+  me=generateStockPlot()
+  return render_template(me)
+  
 
 if __name__ == '__main__':
   app.run(port=33507)
@@ -44,8 +48,8 @@ class generateStockPlot():
         return html
        
     def getNewStock(self):
-        myStock=raw_input()
-        myStock=myStock.strip()
+        #myStock=raw_input()
+        myStock=myStock.strip('googl')
         myStock=myStock.upper()
         return myStock
         
