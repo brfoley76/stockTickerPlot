@@ -49,7 +49,8 @@ class generateStockPlot():
        
     def getNewStock(self):
         #myStock=raw_input()
-        myStock=myStock.strip('googl')
+        myStock='googl'
+        myStock=myStock.strip()
         myStock=myStock.upper()
         return myStock
         
