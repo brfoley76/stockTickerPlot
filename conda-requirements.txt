@@ -4,6 +4,6 @@ dill
 flask
 jinja2
 pip
-simplejson
-datetime
-quandl
+#simplejson
+#datetime
+#quandl

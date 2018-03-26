@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
-import quandl
-quandl.ApiConfig.api_key = 'oGV1c7rq87zKDJD27zat'
+#import quandl
+#quandl.ApiConfig.api_key = 'oGV1c7rq87zKDJD27zat'
 from bokeh.plotting import figure, output_file, show
 from bokeh.embed import file_html
 from bokeh.resources import CDN
