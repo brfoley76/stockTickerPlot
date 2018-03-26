@@ -5,5 +5,5 @@ flask
 jinja2
 pip
 simplejson
-#datetime
+datetime
 quandl
